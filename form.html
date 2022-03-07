@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>密室-表單製作</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+  <link rel="stylesheet" href="css/form.css" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <div class="align-c">
+      <h2>六角西餐廳</h2>
+    </div>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdOgB7aO85d_QdYiIN0BVo7q5M2ZE4UOXBymYKBqAG0jy1WTQ/formResponse" method="post">
+      <div class="itemBox pb-main">
+        <div class="itemHalf">
+          <label for="Hname">姓名</label><br>
+          <input name="entry.814619599" type="text" class="form-full" id="Hname" placeholder="">
+        </div>
+        <div class="itemHalf">
+          <label for="phone">電話</label><br>
+          <input name="entry.346059801" type="tel" class="form-full" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </div>
+      </div>
+
+      <div class="pb-main">
+        <label for="start">日期</label><br>
+        <input type="date" class="form-full" id="start" name="trip-start"
+        value="2022-03-07"
+        min="2022-03-01" max="2099-12-31">
+      </div>
+
+      <div class="pb-main">
+        <label for="numPeople">用餐人數</label><br>
+        <select name="entry.2049574199" class="form-control form-full" id="numPeople">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+      </div>
+
+      <div class="pb-main">
+        <label>其他項目</label><br>
+        <input type="checkbox" id="other1" name="other1" value="需要兒童椅">
+        <label for="other1"> 需要兒童椅</label><br>
+        <input type="checkbox" id="other2" name="other2" value="素食餐點">
+        <label for="other2"> 素食餐點</label><br>
+        <input type="checkbox" id="other3" name="other3" value="吸煙區">
+        <label for="other3"> 吸煙區</label>
+      </div>
+
+      <input type="submit" class="form-full sendBtn" value="送出" >
+    </form>
+  </div>
+</body>
+</html>
